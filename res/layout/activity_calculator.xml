@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CalculatorActivity" >
+
+   <EditText
+        android:id="@+id/inputNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/inputNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inputNumber1"
+        android:layout_below="@+id/inputNumber1"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inputNumber2"
+        android:layout_below="@+id/result"
+        android:onClick="add"
+        android:text=" + " />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/negative"
+        android:layout_below="@+id/result"
+        android:onClick="multiply"
+        android:text=" * " />
+
+    <Button
+        android:id="@+id/negative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Power"
+        android:layout_alignBottom="@+id/Power"
+        android:layout_alignRight="@+id/inputNumber2"
+        android:onClick="negative"
+        android:text="Negate" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sqrt"
+        android:layout_toRightOf="@+id/sqrt"
+        android:onClick="minus"
+        android:text=" - " />
+
+    <Button
+        android:id="@+id/sqrt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/plus"
+        android:layout_marginTop="21dp"
+        android:layout_toLeftOf="@+id/result"
+        android:onClick="sqrt"
+        android:text=" √ " />
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sqrt"
+        android:layout_alignBottom="@+id/sqrt"
+        android:layout_alignLeft="@+id/minus"
+        android:onClick="log"
+        android:text="log" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sqrt"
+        android:layout_toRightOf="@+id/multiply"
+        android:onClick="divide"
+        android:text=" / " />
+
+    <Button
+        android:id="@+id/Power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/log"
+        android:layout_alignBottom="@+id/log"
+        android:layout_toRightOf="@+id/negative"
+        android:onClick="power"
+        android:text="Power" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/divide"
+        android:layout_below="@+id/inputNumber2"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/plus"
+        android:text="Result"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

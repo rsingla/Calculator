@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_currency">Currency</string>
+	
+    <string-array name="currency_arrays">
+        <item>USD</item>
+        <item>INR</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>GBP</item>
+        <item>PKR</item>
+        <item>RUB</item>
+        <item>SGD</item>
+    </string-array>
+    
+     <string-array name="conversiontype_arrays" >
+        <item>Select Value</item>
+        <item>Temperature</item>
+        <item>Data</item>
+    </string-array>
+
+    
+    
+    <string name="title_activity_calculator">CalculatorActivity</string>
+    <string name="title_activity_convertor">ConvertorActivity</string>
+
+</resources>
